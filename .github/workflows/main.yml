@@ -229,7 +229,7 @@ jobs:
           projectPath: test-projects/test-project
           testMode: ${{ matrix.testMode }}
           checkName: ${{ matrix.testMode }} test results
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: ${{ secrets.MY_TOKEN }}
 
       # Upload artifacts
       - uses: actions/upload-artifact@v2
